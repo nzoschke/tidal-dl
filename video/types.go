@@ -1,6 +1,6 @@
 package video
 
-import "github.com/najemi-software/tidal-dl/common"
+import "github.com/najemi-software/tidal-dl/v2/common"
 
 type Video struct {
 	common.BaseVideo

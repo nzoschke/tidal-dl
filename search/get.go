@@ -3,7 +3,7 @@ package search
 import (
 	"encoding/json"
 	"errors"
-	"github.com/najemi-software/tidal-dl/requests"
+	"github.com/najemi-software/tidal-dl/v2/requests"
 	"net/url"
 	"strconv"
 	"strings"

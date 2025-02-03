@@ -1,10 +1,10 @@
 package search
 
 import (
-	"github.com/najemi-software/tidal-dl/artist"
-	"github.com/najemi-software/tidal-dl/common"
-	"github.com/najemi-software/tidal-dl/generics"
-	"github.com/najemi-software/tidal-dl/playlist"
+	"github.com/najemi-software/tidal-dl/v2/artist"
+	"github.com/najemi-software/tidal-dl/v2/common"
+	"github.com/najemi-software/tidal-dl/v2/generics"
+	"github.com/najemi-software/tidal-dl/v2/playlist"
 )
 
 // TODO: Make TopHit nicer in subsequent versions

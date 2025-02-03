@@ -1,7 +1,7 @@
 package requests
 
 import (
-	"github.com/najemi-software/tidal-dl/credentials"
+	"github.com/najemi-software/tidal-dl/v2/credentials"
 	"net/http"
 	"net/url"
 )

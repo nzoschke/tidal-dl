@@ -3,9 +3,9 @@ package album
 import (
 	"encoding/json"
 	"errors"
-	"github.com/najemi-software/tidal-dl/generics"
-	"github.com/najemi-software/tidal-dl/requests"
-	"github.com/najemi-software/tidal-dl/track"
+	"github.com/najemi-software/tidal-dl/v2/generics"
+	"github.com/najemi-software/tidal-dl/v2/requests"
+	"github.com/najemi-software/tidal-dl/v2/track"
 	"strconv"
 )
 

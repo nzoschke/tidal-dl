@@ -3,9 +3,9 @@ package artist
 import (
 	"encoding/json"
 	"errors"
-	"github.com/najemi-software/tidal-dl/generics"
-	"github.com/najemi-software/tidal-dl/requests"
-	"github.com/najemi-software/tidal-dl/video"
+	"github.com/najemi-software/tidal-dl/v2/generics"
+	"github.com/najemi-software/tidal-dl/v2/requests"
+	"github.com/najemi-software/tidal-dl/v2/video"
 	"strconv"
 )
 

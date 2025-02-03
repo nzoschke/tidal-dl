@@ -1,6 +1,6 @@
 package track
 
-import "github.com/najemi-software/tidal-dl/common"
+import "github.com/najemi-software/tidal-dl/v2/common"
 
 type Track struct {
 	common.BaseTrack
