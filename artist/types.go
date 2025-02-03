@@ -1,11 +1,6 @@
 package artist
 
-type Types string
-
-const (
-	ARTIST      Types = "ARTIST"
-	CONTRIBUTOR Types = "CONTRIBUTOR"
-)
+import "github.com/najemi-software/tidal-dl/v2/artist_type"
 
 type Role struct {
 	CategoryId int    `json:"categoryId"`
@@ -13,15 +8,15 @@ type Role struct {
 }
 
 type Artist struct {
-	Id                         int               `json:"id"`
-	Name                       string            `json:"name"`
-	ArtistTypes                []Types           `json:"artistTypes"`
-	Url                        string            `json:"url"`
-	Picture                    string            `json:"picture"`
-	SelectedAlbumCoverFallback interface{}       `json:"selectedAlbumCoverFallback"`
-	Popularity                 int               `json:"popularity"`
-	ArtistRoles                []Role            `json:"artistRoles"`
-	Mixes                      map[string]string `json:"mixes"`
+	Id                         int                      `json:"id"`
+	Name                       string                   `json:"name"`
+	ArtistTypes                []artist_type.ArtistType `json:"artistTypes"`
+	Url                        string                   `json:"url"`
+	Picture                    string                   `json:"picture"`
+	SelectedAlbumCoverFallback interface{}              `json:"selectedAlbumCoverFallback"`
+	Popularity                 int                      `json:"popularity"`
+	ArtistRoles                []Role                   `json:"artistRoles"`
+	Mixes                      map[string]string        `json:"mixes"`
 }
 
 type Bio struct {

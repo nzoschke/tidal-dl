@@ -44,12 +44,12 @@ func SendRequest(method Method, uri string, params url.Values, data url.Values, 
 	// Read the response body
 	responseBody, err := io.ReadAll(resp.Body)
 	if err != nil {
-		panic(err.Error())
+		return nil, nil, err
 	}
 
 	err = resp.Body.Close()
 	if err != nil {
-		panic(err.Error())
+		return nil, nil, err
 	}
 
 	responseBodyString := string(responseBody)
