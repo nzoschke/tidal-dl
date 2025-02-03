@@ -7,8 +7,8 @@ import (
 	"strconv"
 )
 
-func Get(id string) (*Video, error) {
-	response, responseData, err := requests.SendBasicRequest(requests.GET, "videos/"+id, nil, nil, nil)
+func Get(id int) (*Video, error) {
+	response, responseData, err := requests.SendBasicRequest(requests.GET, "videos/"+strconv.Itoa(id), nil, nil, nil)
 	if err != nil {
 		return nil, err
 	}

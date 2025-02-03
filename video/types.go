@@ -6,3 +6,8 @@ type Video struct {
 	common.BaseVideo
 	Artist common.ItemArtist `json:"artist"`
 }
+
+type StreamUrl struct {
+	Url          string `json:"url"`
+	VideoQuality string `json:"videoQuality"`
+}
