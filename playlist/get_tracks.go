@@ -3,7 +3,6 @@ package playlist
 import (
 	"encoding/json"
 	"errors"
-	"fmt"
 	"github.com/google/go-querystring/query"
 	"github.com/najemi-software/tidal-dl/v4/generics"
 	"github.com/najemi-software/tidal-dl/v4/requests"
@@ -22,8 +21,8 @@ type Track struct {
 type TracksResponse = generics.PaginatedResponse[Track]
 
 type GetTracksParams struct {
-	Offset *int `url:"offset"`
-	Limit  *int `url:"limit"`
+	Offset *int `url:"offset,omitempty"`
+	Limit  *int `url:"limit,omitempty"`
 }
 
 func GetTracks(id string, params *GetTracksParams) (*TracksResponse, error) {
