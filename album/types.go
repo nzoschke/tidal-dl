@@ -1,7 +1,7 @@
 package album
 
 import (
-	"github.com/najemi-software/tidal-dl/v2/common"
+	"github.com/najemi-software/tidal-dl/v3/common"
 )
 
 type Album struct {

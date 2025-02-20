@@ -3,8 +3,8 @@ package auth
 import (
 	"encoding/json"
 	"errors"
-	"github.com/najemi-software/tidal-dl/v2/credentials"
-	"github.com/najemi-software/tidal-dl/v2/requests"
+	"github.com/najemi-software/tidal-dl/v3/credentials"
+	"github.com/najemi-software/tidal-dl/v3/requests"
 	"net/url"
 	"strconv"
 )

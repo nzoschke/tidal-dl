@@ -1,6 +1,6 @@
 package artist
 
-import "github.com/najemi-software/tidal-dl/v2/artist_type"
+import "github.com/najemi-software/tidal-dl/v3/artist_type"
 
 type Role struct {
 	CategoryId int    `json:"categoryId"`

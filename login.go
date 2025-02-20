@@ -3,9 +3,9 @@ package tidal_dl
 import (
 	"errors"
 	"fmt"
-	"github.com/najemi-software/tidal-dl/v2/auth"
-	"github.com/najemi-software/tidal-dl/v2/credentials"
-	"github.com/najemi-software/tidal-dl/v2/session"
+	"github.com/najemi-software/tidal-dl/v3/auth"
+	"github.com/najemi-software/tidal-dl/v3/credentials"
+	"github.com/najemi-software/tidal-dl/v3/session"
 	"time"
 )
 

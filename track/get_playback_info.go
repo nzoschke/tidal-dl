@@ -3,8 +3,8 @@ package track
 import (
 	"encoding/json"
 	"errors"
-	"github.com/najemi-software/tidal-dl/v2/audio_quality"
-	"github.com/najemi-software/tidal-dl/v2/requests"
+	"github.com/najemi-software/tidal-dl/v3/audio_quality"
+	"github.com/najemi-software/tidal-dl/v3/requests"
 	"net/url"
 	"strconv"
 )

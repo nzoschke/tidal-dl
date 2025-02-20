@@ -1,9 +1,9 @@
 package track
 
 import (
-	"github.com/najemi-software/tidal-dl/v2/audio_quality"
-	"github.com/najemi-software/tidal-dl/v2/common"
-	"github.com/najemi-software/tidal-dl/v2/encryption_type"
+	"github.com/najemi-software/tidal-dl/v3/audio_quality"
+	"github.com/najemi-software/tidal-dl/v3/common"
+	"github.com/najemi-software/tidal-dl/v3/encryption_type"
 )
 
 type Track struct {

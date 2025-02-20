@@ -3,7 +3,7 @@ package artist
 import (
 	"encoding/json"
 	"errors"
-	"github.com/najemi-software/tidal-dl/v2/requests"
+	"github.com/najemi-software/tidal-dl/v3/requests"
 	"strconv"
 )
 
