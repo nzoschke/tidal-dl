@@ -3,7 +3,7 @@ package user
 import (
 	"encoding/json"
 	"errors"
-	"github.com/najemi-software/tidal-dl/v3/requests"
+	"github.com/najemi-software/tidal-dl/v4/requests"
 	"strconv"
 )
 

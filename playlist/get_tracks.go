@@ -3,9 +3,11 @@ package playlist
 import (
 	"encoding/json"
 	"errors"
-	"github.com/najemi-software/tidal-dl/v3/generics"
-	"github.com/najemi-software/tidal-dl/v3/requests"
-	"github.com/najemi-software/tidal-dl/v3/track"
+	"fmt"
+	"github.com/google/go-querystring/query"
+	"github.com/najemi-software/tidal-dl/v4/generics"
+	"github.com/najemi-software/tidal-dl/v4/requests"
+	"github.com/najemi-software/tidal-dl/v4/track"
 	"strconv"
 )
 
@@ -19,8 +21,18 @@ type Track struct {
 
 type TracksResponse = generics.PaginatedResponse[Track]
 
-func GetTracks(id string) (*TracksResponse, error) {
-	response, responseData, err := requests.SendBasicRequest(requests.GET, "playlists/"+id+"/tracks", nil, nil, nil)
+type GetTracksParams struct {
+	Offset *int `url:"offset"`
+	Limit  *int `url:"limit"`
+}
+
+func GetTracks(id string, params *GetTracksParams) (*TracksResponse, error) {
+	paramsValues, err := query.Values(params)
+	if err != nil {
+		return nil, err
+	}
+
+	response, responseData, err := requests.SendBasicRequest(requests.GET, "playlists/"+id+"/tracks", paramsValues, nil, nil)
 	if err != nil {
 		return nil, err
 	}
