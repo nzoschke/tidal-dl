@@ -28,7 +28,7 @@ func InteractiveLogin() error {
 
 			if loginLinkError.ErrorType == "authorization_pending" {
 				time.Sleep(time.Second * time.Duration(link.Interval))
-				break
+				continue
 			}
 
 			return err
