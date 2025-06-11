@@ -22,7 +22,7 @@ type User struct {
 	PostalCode         *string `json:"postalcode"`
 	UseState           *string `json:"useState"`
 	PhoneNumber        *string `json:"phoneNumber"`
-	Birthday           *string `json:"birthday"`
+	Birthday           *int64  `json:"birthday"`
 	ChannelId          int     `json:"channelId"`
 	ParentId           int     `json:"parentId"`
 	AcceptedEULA       bool    `json:"acceptedEULA"`
