@@ -29,7 +29,7 @@ type User struct {
 	Created            int     `json:"created"`
 	Updated            int     `json:"updated"`
 	FacebookUId        *int    `json:"facebookUId"`
-	AppleUId           *int    `json:"appleUId"`
+	AppleUId           *string `json:"appleUId"`
 	GoogleUId          *int    `json:"googleUId"`
 	AccountLinkCreated bool    `json:"accountLinkCreated"`
 	EmailVerified      bool    `json:"emailVerified"`
